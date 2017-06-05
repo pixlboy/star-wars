@@ -1,18 +1,76 @@
 @import '_variables';
-@import '_mixins';
 @import '_normalize';
 @import '_animations';
 /*=================== Main CSS =======================*/
 .app-body {
     position: relative;
+    z-index: 100;
+    .app-wrapper {
+        margin: 0;
+        padding: 0;
+    }
 }
 
-.app-wrapper {
-    margin: 0;
-    padding: 0;
-}
-
-.login-wrapper{
+.login-wrapper, .search-wrapper{
     padding:40px;
     width: 80%;
+    .header{
+        margin:0 0 20px 0;
+    }
+}
+
+.search-wrapper{
+    .planet{
+        padding:10px;
+        margin:20px 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .planet-body{
+        filter: grayscale(50%);
+        filter: blur(5px);
+        border-radius: 50%;
+        display: block;
+        color: $font-color;
+        margin: 0 0 0 100px;
+        &:hover{
+            transition: all 2s;
+            cursor: pointer;
+            filter: grayscale(0);
+            filter: blur(0);
+        }
+    }
+    .planet-detail{
+        color: $font-color;
+    }
+}
+
+.stars, .twinkling, .clouds {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:block;
+}
+
+.stars {
+  background:#000 url("../images/stars.png") repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url("../images/twinkling.png") repeat top center;
+  z-index:1;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url("../images/clouds.png") repeat top center;
+    z-index:3;
+    animation:move-clouds-back 200s linear infinite;
+}
+.error{
+    color : $error-color;
 }

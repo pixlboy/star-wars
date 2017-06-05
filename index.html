@@ -7,28 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
     <title>STAR WARS</title>
-    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <script type="text/javascript">
         (function() {
             var styles = ['css/vendor.css', 'css/styles.css'];
-            // Loop through each styles name and append our new version number for cache busting
+            // Loop through each styles name and append new version number for cache busting
             styles.map(function(style) {
                 document.write("<link rel='stylesheet' href='" + style + "?version=2.0_" + (new Date().getTime()) + "'>");
             });
         })();
     </script>
 </head>
-<body ng-cloak class="full-height">
-    <header class="dashboard-header">
-        <h1 class="text-center">Star Wars Galaxy</h1>
-    </header>
-    <div class="container-fluid app-wrapper full-height">
+<body ng-cloak>
+    <div class="app-wrapper">
+        <div class="night-sky">
+            <div class="stars"></div>
+            <div class="twinkling"></div>
+            <div class="clouds"></div>
+        </div>
         <article class="app-body full-height" ui-view></article>
     </div>
     <script type="text/javascript">
         (function() {
             var scripts = ['js/vendor.js', 'api.config.js', 'app.config.js', 'js/app.js'];
-            // Loop through each script name and append our new version number for cache busting
+            // Loop through each script name and append new version number for cache busting
             scripts.map(function(script) {
                 document.write("<script src='" + script + "?version=2.0_" + (new Date().getTime()) + "'><\/script>");
             });

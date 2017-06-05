@@ -1,17 +1,19 @@
 ## star-wars
 
-Prequisites
+Prequisites - Install these softwares
 ============
 * node.js <download and install from web>
 * Git <download and install from web>  
-* Take the latest pull from Git
 
-Project setup - Run commands in cmd
+Project setup - Run these commands in cmd/git bash
 ============
-* Run -> npm install
+* Take the latest pull from Git
+    -> git clone https://github.com/rach8garg/star-wars
+* Install the project dependencies
+    -> npm install
 
-Development instruction - Run commands in cmd
+Development instruction - Run these commands in cmd/git bash
 =======================
 * gulp --env dev
 
-Access in browser -> http://localhost:8080/index.html
+Access in browser -> http://localhost:8080

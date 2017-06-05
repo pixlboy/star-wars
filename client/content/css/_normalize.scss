@@ -48,7 +48,6 @@ html {
         margin: 10px 0;
         padding: 0;
         font-weight: 500;
-        font-family: inherit;
     }
 
     h1 {
@@ -88,15 +87,12 @@ html {
         padding: 0;
         list-style-type: none;
         font-weight: 400;
-        letter-spacing: initial;
         font-size: 0.875rem;
-        line-height: initial;
     }
 
     small {
         font-size: 0.625rem;
         font-weight: 700;
-        line-height: initial;
     }
 
     code {
@@ -164,7 +160,6 @@ html {
         font-weight: 400;
         font-style: italic;
         line-height: 1rem;
-        letter-spacing: initial;
     }
 
     b,
@@ -181,10 +176,4 @@ html {
     [x-ng-cloak] {
         display: none !important;
     }
-}
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/MaterialIcons-Regular.eot") format('embedded-opentype'), url("../fonts/MaterialIcons-Regular.woff2") format('woff2'), url("../fonts/MaterialIcons-Regular.woff") format('woff'), url("../fonts/MaterialIcons-Regular.ttf") format('truetype');
 }

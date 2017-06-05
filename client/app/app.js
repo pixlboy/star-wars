@@ -20,15 +20,15 @@ starwars.config(['$stateProvider', '$urlRouterProvider', function($stateProvider
         templateUrl: 'partials/login.html',
         controller: 'LoginCtrl as login'
     })
-    .state('planets', {
-        url: '/planets',
-        templateUrl: 'partials/planets.html',
-        controller: 'PlanetsCtrl as planets'
+    .state('search', {
+        url: '/search',
+        templateUrl: 'partials/search.html',
+        controller: 'SearchCtrl as search'
     });
 }]);
 
-starwars.run(['$rootScope', 'ENV', 'BASE_URL', 'CommonUserConfigService',
-    function($rootScope, ENV, BASE_URL, CommonUserConfigService) {
+starwars.run(['$rootScope', 'ENV', 'BASE_URL', 'CommonGalaxyService',
+    function($rootScope, ENV, BASE_URL, CommonGalaxyService) {
         attachDomainHTTPInterceptor(ENV, BASE_URL);
-        CommonUserConfigService.getAllUsers();
+        CommonGalaxyService.getAllUsers();
 }]);

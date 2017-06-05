@@ -1,5 +1,8 @@
 <!-- Login content starts -->
 <section class="login-wrapper center-block">
+	<header class="header">
+		<h1 class="text-center">Login to enter the Galaxy</h1>
+	</header>
 	<div class="login-body">
 		<form ng-submit="login.submit()">
 			<input type="text" placeholder="Enter Your full name" class="form-control pull-left" ng-model="login.name" />
@@ -11,7 +14,7 @@
 	</div>
 	<div class="login-footer">
 		<p class="clearfix"></p>
-		<h6 class="text-center" ng-if="login.isError">Invalid Username or Password</h6>
+		<h6 class="text-center error" ng-if="login.isError">Invalid Username or Password</h6>
 	</div>
 </section>
 <!-- Login content ends -->
