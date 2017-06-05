@@ -1,0 +1,190 @@
+//Normalize styles
+
+html {
+    color: $font-color;
+    font: 100% $font-stack;
+    font-weight: 400;
+    font-size: 16px;
+    background: #000;
+
+    body {
+        background: #000;
+        margin: 0;
+        font-size: 0.75rem;
+        font: 100% $font-stack;
+        font-weight: 400;
+        -ms-overflow-style: scrollbar;
+        min-height: 100%;
+    }
+
+    a {
+        font-weight: 400;
+        //override to fix MDL style
+        color: $font-color;
+        text-decoration: none;
+        font-size: 0.75rem;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+            outline: none;
+        }
+    }
+
+    p {
+        margin: 0 0 10px;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $font-color;
+        margin: 10px 0;
+        padding: 0;
+        font-weight: 500;
+        font-family: inherit;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+    }
+
+    h5 {
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+    }
+
+    h6 {
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+    }
+
+    li,
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        font-weight: 400;
+        letter-spacing: initial;
+        font-size: 0.875rem;
+        line-height: initial;
+    }
+
+    small {
+        font-size: 0.625rem;
+        font-weight: 700;
+        line-height: initial;
+    }
+
+    code {
+        color: $font-color;
+    }
+
+    ::-ms-clear {
+        display: none;
+    }
+
+    pre {
+        white-space: pre-wrap;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+        vertical-align: middle;
+    }
+
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    dt {
+        font-weight: 400;
+    }
+
+    address {
+        font-size: 12px;
+        line-height: 1;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    mark {
+        background-color: #f4ff81;
+    }
+
+    blockquote {
+        font: 100% $font-stack;
+        position: relative;
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1rem;
+        letter-spacing: initial;
+    }
+
+    b,
+    strong {
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+
+    .ng-cloak,
+    .x-ng-cloak,
+    [data-ng-cloak],
+    [ng-cloak],
+    [ng\:cloak],
+    [x-ng-cloak] {
+        display: none !important;
+    }
+}
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/MaterialIcons-Regular.eot") format('embedded-opentype'), url("../fonts/MaterialIcons-Regular.woff2") format('woff2'), url("../fonts/MaterialIcons-Regular.woff") format('woff'), url("../fonts/MaterialIcons-Regular.ttf") format('truetype');
+}

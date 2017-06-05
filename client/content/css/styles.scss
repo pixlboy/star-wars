@@ -1,0 +1,18 @@
+@import '_variables';
+@import '_mixins';
+@import '_normalize';
+@import '_animations';
+/*=================== Main CSS =======================*/
+.app-body {
+    position: relative;
+}
+
+.app-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.login-wrapper{
+    padding:40px;
+    width: 80%;
+}

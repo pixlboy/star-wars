@@ -1,0 +1,6 @@
+{
+		"ENV": {
+			"people"	: "people/",
+			"planets"	: "planets/"
+		}
+}

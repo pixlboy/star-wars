@@ -1,0 +1,17 @@
+<!-- Login content starts -->
+<section class="login-wrapper center-block">
+	<div class="login-body">
+		<form ng-submit="login.submit()">
+			<input type="text" placeholder="Enter Your full name" class="form-control pull-left" ng-model="login.name" />
+			<p class="clearfix"></p>
+			<input type="password" placeholder="Enter Your password" class="form-control pull-left" ng-model="login.password" />
+			<p class="clearfix"></p>
+			<input type="submit" ng-click="login.submit()" value="Login" class="btn btn-primary form-control pull-left" />
+		</form>
+	</div>
+	<div class="login-footer">
+		<p class="clearfix"></p>
+		<h6 class="text-center" ng-if="login.isError">Invalid Username or Password</h6>
+	</div>
+</section>
+<!-- Login content ends -->

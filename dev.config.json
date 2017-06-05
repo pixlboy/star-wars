@@ -1,0 +1,9 @@
+{
+    "FEATURES": {
+        "superUser": {
+            "name": "Luke Skywalker",
+            "enabled": true
+        }
+    },
+    "BASE_URL" : "http://swapi.co/api/"
+}

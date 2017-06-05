@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="starwars">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>STAR WARS</title>
+    <!-- <link rel="shortcut icon" href="" type="image/x-icon"> -->
+    <script type="text/javascript">
+        (function() {
+            var styles = ['css/vendor.css', 'css/styles.css'];
+            // Loop through each styles name and append our new version number for cache busting
+            styles.map(function(style) {
+                document.write("<link rel='stylesheet' href='" + style + "?version=2.0_" + (new Date().getTime()) + "'>");
+            });
+        })();
+    </script>
+</head>
+<body ng-cloak class="full-height">
+    <header class="dashboard-header">
+        <h1 class="text-center">Star Wars Galaxy</h1>
+    </header>
+    <div class="container-fluid app-wrapper full-height">
+        <article class="app-body full-height" ui-view></article>
+    </div>
+    <script type="text/javascript">
+        (function() {
+            var scripts = ['js/vendor.js', 'api.config.js', 'app.config.js', 'js/app.js'];
+            // Loop through each script name and append our new version number for cache busting
+            scripts.map(function(script) {
+                document.write("<script src='" + script + "?version=2.0_" + (new Date().getTime()) + "'><\/script>");
+            });
+        })();
+    </script>
+</body>
+</html>
