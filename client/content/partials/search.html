@@ -1,0 +1,26 @@
+<!-- Search content starts -->
+<section class="search-wrapper center-block">
+	<a href="javascript:void(0)" ui-sref="login" class="pull-right">Logout</a>
+	<header class="header">
+		<h1 class="text-center">Hello {{search.userName}}, welcome to the Galaxy</h1>
+	</header>
+	<div class="search-body">
+		<form>
+			<input type="text" placeholder="Enter the planet name" class="form-control" ng-model="search.query" />
+			<p class="clearfix"></p>
+		</form>
+	</div>
+	<div class="search-results">
+		<ul ng-if="search.query">
+			<li ng-repeat="(planetIdx, planet) in search.allPlanets | filter: { name : search.query} track by planetIdx" class="planet">
+				<div class="planet-detail pull-left">
+					<p><label>Name :</label><strong> {{planet.name}}</strong></p>
+					<p><label>Population :</label><strong> {{planet.population}}</strong></p>
+					<p><label>Climate :</label><strong> {{planet.climate}}</strong></p>
+				</div>
+				<planet class="planet-body pull-left"></planet>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- Search content ends -->

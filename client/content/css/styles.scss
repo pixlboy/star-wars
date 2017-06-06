@@ -28,6 +28,8 @@
         align-items: center;
     }
     .planet-body{
+        background:url("../images/planet.png") repeat center center;
+        box-shadow: inset 15px 15px 15px rgba(255, 255, 255, .4), inset -5px -5px 10px rgba(0, 0, 0, .4);
         filter: grayscale(50%);
         filter: blur(5px);
         border-radius: 50%;
@@ -37,8 +39,7 @@
         &:hover{
             transition: all 2s;
             cursor: pointer;
-            filter: grayscale(0);
-            filter: blur(0);
+            filter: blur(2px);
         }
     }
     .planet-detail{
